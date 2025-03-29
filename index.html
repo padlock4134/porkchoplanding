@@ -416,6 +416,22 @@
                 });
             });
         });
+
+           // Add the new code here
+        const form = document.getElementById('waitlist-form');
+        
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                // Get the email for potential use later
+                const email = document.getElementById('email').value;
+                
+                // Store in local storage (optional)
+                localStorage.setItem('chefFreddieEmail', email);
+                
+                // The form will still continue to submit normally and redirect to thanks.html
+            });
+        }
+    });
     </script>
 </body>
 </html>
