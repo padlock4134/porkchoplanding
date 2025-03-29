@@ -105,6 +105,7 @@
                     <p class="text-butcher-600 mb-4">
                         Our team will review your submission and send you an email with more information about Chef Freddie and how to get early access to our beta program.
                     </p>
+                    <p class="confirmation-message text-butcher-600 mb-4"></p>
                     <p class="text-butcher-600">
                         In the meantime, keep an eye on your inbox (including spam/promotions folders) for updates from Chef. 
                     </p>
@@ -119,14 +120,33 @@
 
     <!-- Footer -->
     <footer class="bg-white border-t border-gray-200 py-8">
-                <div class="flex flex-wrap justify-center gap-6">
-                    <a href="#" class="text-butcher-600 hover:text-butcher-800 transition-colors">Privacy Policy</a>
-                </div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#" class="text-butcher-600 hover:text-butcher-800 transition-colors">Privacy Policy</a>
             </div>
             <div class="mt-6 text-center text-butcher-600">
-                <p><script>document.write(new Date().getFullYear());</script> 2025 PorkChop Technologies. All rights reserved.</p>
+                <p><script>document.write(new Date().getFullYear());</script> PorkChop Technologies. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get current year for footer
+            const currentYear = new Date().getFullYear();
+            const yearElements = document.querySelectorAll('.current-year');
+            yearElements.forEach(el => {
+                el.textContent = currentYear;
+            });
+            
+            // Add this code for email confirmation
+            const email = localStorage.getItem('chefFreddieEmail');
+            const messageElement = document.querySelector('.confirmation-message');
+            
+            if (email && messageElement) {
+                messageElement.textContent = `We've sent a confirmation to ${email}. Please check your inbox!`;
+            }
+        });
+    </script>
 </body>
 </html>
