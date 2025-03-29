@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Freddie AI Assistant - Get Early Access</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-porkchop-50 { background-color: #fff2f0; }
+        .bg-porkchop-100 { background-color: #ffe0db; }
+        .bg-porkchop-500 { background-color: #d04840; }
+        .bg-porkchop-600 { background-color: #c13c33; }
+        .bg-porkchop-700 { background-color: #a32e26; }
+        .bg-butcher-50 { background-color: #f8f5f0; }
+        .bg-butcher-100 { background-color: #e6ddcf; }
+        .bg-butcher-300 { background-color: #b5a48b; }
+        .bg-butcher-600 { background-color: #6d5c45; }
+        .bg-butcher-700 { background-color: #594a38; }
+        .bg-butcher-800 { background-color: #3a2e22; }
+        .text-porkchop-600 { color: #c13c33; }
+        .text-butcher-100 { color: #e6ddcf; }
+        .text-butcher-300 { color: #b5a48b; }
+        .text-butcher-600 { color: #6d5c45; }
+        .text-butcher-700 { color: #594a38; }
+        .text-butcher-800 { color: #3a2e22; }
+        .border-porkchop-600 { border-color: #c13c33; }
+        .hover\:bg-porkchop-50:hover { background-color: #fff2f0; }
+        .hover\:bg-porkchop-600:hover { background-color: #c13c33; }
+        .hover\:bg-porkchop-700:hover { background-color: #a32e26; }
+        .hover\:text-butcher-800:hover { color: #3a2e22; }
+        .font-serif { font-family: "Times New Roman", Times, serif; }
+        .from-butcher-100 { --tw-gradient-from: #e6ddcf; }
+        .to-porkchop-100 { --tw-gradient-to: #ffe0db; }
+        body { background-color: #f8f5f0; }
+    </style>
+</head>
+<body class="min-h-screen" style="background-color: #f8f5f0;">
+    <!-- Header with PorkChop Logo -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 mr-2">
+                        <!-- Mini Chef Freddie Logo -->
+                        <svg
+                            viewBox="0 0 100 100"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <!-- Circle background -->
+                            <circle cx="50" cy="50" r="46" fill="#FFFFFF" />
+                            
+                            <!-- Chef Hat -->
+                            <path
+                                d="M28 23h44c0 0 6-16-22-16s-22 16-22 16z"
+                                fill="#000000"
+                            />
+                            
+                            <!-- Chef Coat -->
+                            <path
+                                d="M18 60v25c0 0 17 10 32 10s32-10 32-10v-25c-5 15-27 20-32 20s-27-5-32-20z"
+                                fill="#F9FAFB"
+                            />
+                            
+                            <!-- Pig Face -->
+                            <path
+                                d="M23 50c0-14.8 12.2-27 27-27s27 12.2 27 27-12.2 27-27 27S23 64.8 23 50z"
+                                fill="#FBCFE8"
+                            />
+                            
+                            <!-- Eyes -->
+                            <circle cx="38" cy="45" r="4" fill="#000000" />
+                            <circle cx="62" cy="45" r="4" fill="#000000" />
+                            
+                            <!-- Snout -->
+                            <circle cx="50" cy="55" r="7" fill="#F9A8D4" />
+                            <circle cx="47" cy="54" r="1.5" fill="#000000" />
+                            <circle cx="53" cy="54" r="1.5" fill="#000000" />
+                            
+                            <!-- Bow Tie -->
+                            <path
+                                d="M45 65l5 5 5-5-5-5z"
+                                fill="#000000"
+                            />
+                        </svg>
+                    </div>
+                    <span class="text-2xl font-bold text-butcher-800">PorkChop</span>
+                </div>
+                <div>
+                    <a href="#interest-form" class="text-butcher-600 hover:text-butcher-800 transition-colors">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Hero Section -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-16">
+            <div class="bg-gradient-to-r from-butcher-100 to-porkchop-100 p-12 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl font-bold text-butcher-800 mb-4 font-serif">Meet Chef Freddie</h1>
+                    <p class="text-xl text-butcher-600 mb-8">
+                        Born to bring old-world cooking into modern kitchens, Chef Freddie helps you create exceptional meals with whatever you have on hand. Experience authentic culinary tradition with digital-age convenience.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#interest-form" class="px-8 py-4 bg-porkchop-600 text-white font-medium rounded-md hover:bg-porkchop-700 transition-colors text-center">
+                            Join Waitlist
+                        </a>
+                        <a href="#features" class="px-8 py-4 border border-porkchop-600 text-porkchop-600 font-medium rounded-md hover:bg-porkchop-50 transition-colors text-center">
+                            See Features
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="w-80 h-80">
+                        <!-- Chef Freddie Logo -->
+                        <svg
+                            class="w-full h-full"
+                            viewBox="0 0 100 100"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <!-- Circle background -->
+                            <circle cx="50" cy="50" r="46" fill="#FFFFFF" />
+                            
+                            <!-- Chef Hat -->
+                            <path
+                                d="M28 23h44c0 0 6-16-22-16s-22 16-22 16z"
+                                fill="#000000"
+                            />
+                            
+                            <!-- Chef Coat -->
+                            <path
+                                d="M18 60v25c0 0 17 10 32 10s32-10 32-10v-25c-5 15-27 20-32 20s-27-5-32-20z"
+                                fill="#F9FAFB"
+                            />
+                            <path
+                                d="M18 60v25c0 0 17 10 32 10s32-10 32-10v-25"
+                                stroke="#9CA3AF"
+                                stroke-width="2"
+                            />
+                            
+                            <!-- Pig Face -->
+                            <path
+                                d="M23 50c0-14.8 12.2-27 27-27s27 12.2 27 27-12.2 27-27 27S23 64.8 23 50z"
+                                fill="#FBCFE8"
+                            />
+                            
+                            <!-- Eyes -->
+                            <circle cx="38" cy="45" r="6" fill="#000000" />
+                            <circle cx="62" cy="45" r="6" fill="#000000" />
+                            
+                            <!-- Snout -->
+                            <circle cx="50" cy="55" r="9" fill="#F9A8D4" />
+                            <circle cx="47" cy="54" r="2.5" fill="#000000" />
+                            <circle cx="53" cy="54" r="2.5" fill="#000000" />
+                            
+                            <!-- Bow Tie -->
+                            <path
+                                d="M45 65l5 5 5-5-5-5z"
+                                fill="#000000"
+                            />
+                            
+                            <!-- Chef Uniform Buttons -->
+                            <circle cx="50" cy="75" r="2" fill="#000000" />
+                            <circle cx="50" cy="82" r="2" fill="#000000" />
+                            
+                            <!-- Spatula -->
+                            <path
+                                d="M70 40l15 10-5 5-15-10z"
+                                fill="#000000"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+            <div class="bg-white rounded-lg shadow-md p-8 text-center">
+                <div class="text-4xl font-bold text-porkchop-600 mb-2">24/7</div>
+                <div class="text-lg text-butcher-600">Available Anytime</div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-8 text-center">
+                <div class="text-4xl font-bold text-porkchop-600 mb-2">100+</div>
+                <div class="text-lg text-butcher-600">Cooking Techniques</div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-8 text-center">
+                <div class="text-4xl font-bold text-porkchop-600 mb-2">100%</div>
+                <div class="text-lg text-butcher-600">Personalized Help</div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-8 text-center">
+                <div class="text-4xl font-bold text-porkchop-600 mb-2">∞</div>
+                <div class="text-lg text-butcher-600">Unlimited Recipes</div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div id="features" class="mb-16">
+            <h2 class="text-3xl font-bold text-butcher-800 mb-8 text-center">What Chef Freddie Can Do</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="bg-porkchop-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-porkchop-600 text-3xl">🍲</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-butcher-800 mb-3">Technique Guidance</h3>
+                    <p class="text-butcher-600">Receive detailed, step-by-step instructions on cooking techniques from basic knife skills to advanced methods like creating reductions and infusions.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="bg-porkchop-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-porkchop-600 text-3xl">🧪</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-butcher-800 mb-3">Ingredient Adaptations</h3>
+                    <p class="text-butcher-600">Learn how to adapt recipes to whatever ingredients you have available in your fridge or pantry, no shopping trip required.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="bg-porkchop-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-porkchop-600 text-3xl">⏱️</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-butcher-800 mb-3">Real-time Support</h3>
+                    <p class="text-butcher-600">Get immediate answers to cooking questions as they arise during your cooking process, like temperature adjustments or doneness checks.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="bg-porkchop-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-porkchop-600 text-3xl">🔍</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-butcher-800 mb-3">Precise Cooking Methods</h3>
+                    <p class="text-butcher-600">Master the art of temperature control, stirring techniques, and timing for perfect results every time you cook.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="bg-porkchop-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-porkchop-600 text-3xl">🧮</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-butcher-800 mb-3">Measurement Assistance</h3>
+                    <p class="text-butcher-600">Get help with conversions, proper measuring techniques, and scaling portions up or down to suit your needs.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="bg-porkchop-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-porkchop-600 text-3xl">🥩</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-butcher-800 mb-3">Local Ingredient Shopping</h3>
+                    <p class="text-butcher-600">Find and shop for the freshest ingredients from local markets, butcher shops, and family farms in your neighborhood.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works -->
+        <div class="bg-white rounded-lg shadow-lg p-12 mb-16">
+            <h2 class="text-3xl font-bold text-butcher-800 mb-8 text-center">How Chef Freddie Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="bg-porkchop-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-porkchop-600 text-2xl">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-butcher-800 mb-3">Discover Matched Recipes</h3>
+                    <p class="text-butcher-600">Our algorithm finds the perfect recipes based on the ingredients you already have in your kitchen.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-porkchop-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-porkchop-600 text-2xl">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-butcher-800 mb-3">Get Expert Guidance</h3>
+                    <p class="text-butcher-600">Chef Freddie guides you through every step with detailed technique instructions and real-time support.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-porkchop-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-porkchop-600 text-2xl">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-butcher-800 mb-3">Master New Skills</h3>
+                    <p class="text-butcher-600">Learn and improve your cooking techniques from basic knife skills to advanced methods with each meal.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Interest Form -->
+        <div id="interest-form" class="bg-white rounded-lg shadow-lg p-12 mb-16">
+            <h2 class="text-3xl font-bold text-butcher-800 mb-8 text-center">Join the PorkChop Waitlist</h2>
+            <p class="text-center text-butcher-600 mb-8 max-w-3xl mx-auto">
+                Chef Freddie is currently in beta. Join our waitlist to be among the first to experience the future of AI-assisted cooking.
+            </p>
+            <form class="max-w-2xl mx-auto" action="mailto:chef@porkchop.app" method="post" enctype="text/plain">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="first-name" class="block text-sm font-medium text-butcher-700 mb-1">First Name</label>
+                        <input type="text" id="first-name" name="first-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-porkchop-500 focus:border-porkchop-500" required>
+                    </div>
+                    <div>
+                        <label for="last-name" class="block text-sm font-medium text-butcher-700 mb-1">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-porkchop-500 focus:border-porkchop-500" required>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-sm font-medium text-butcher-700 mb-1">Email Address</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-porkchop-500 focus:border-porkchop-500" required>
+                </div>
+                <div class="mb-6">
+                    <label for="cooking-level" class="block text-sm font-medium text-butcher-700 mb-1">Your Cooking Experience Level</label>
+                    <select id="cooking-level" name="cooking-level" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-porkchop-500 focus:border-porkchop-500" required>
+                        <option value="">Please select an option</option>
+                        <option value="beginner">Beginner - I'm learning the basics</option>
+                        <option value="intermediate">Intermediate - I cook regularly</option>
+                        <option value="advanced">Advanced - I'm very comfortable in the kitchen</option>
+                        <option value="professional">Professional - I cook professionally</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label for="interests" class="block text-sm font-medium text-butcher-700 mb-1">What interests you most about Chef Freddie? (Select all that apply)</label>
+                    <div class="space-y-2 mt-2">
+                        <div class="flex items-start">
+                            <input id="cooking-techniques" name="interests-techniques" type="checkbox" value="yes" class="h-4 w-4 text-porkchop-600 focus:ring-porkchop-500 border-gray-300 rounded">
+                            <label for="cooking-techniques" class="ml-3 text-sm text-butcher-700">Learning professional cooking techniques</label>
+                        </div>
+                        <div class="flex items-start">
+                            <input id="fridge-cooking" name="interests-fridge" type="checkbox" value="yes" class="h-4 w-4 text-porkchop-600 focus:ring-porkchop-500 border-gray-300 rounded">
+                            <label for="fridge-cooking" class="ml-3 text-sm text-butcher-700">Cooking with ingredients I already have</label>
+                        </div>
+                        <div class="flex items-start">
+                            <input id="step-guidance" name="interests-guidance" type="checkbox" value="yes" class="h-4 w-4 text-porkchop-600 focus:ring-porkchop-500 border-gray-300 rounded">
+                            <label for="step-guidance" class="ml-3 text-sm text-butcher-700">Step-by-step cooking guidance</label>
+                        </div>
+                        <div class="flex items-start">
+                            <input id="advanced-methods" name="interests-advanced" type="checkbox" value="yes" class="h-4 w-4 text-porkchop-600 focus:ring-porkchop-500 border-gray-300 rounded">
+                            <label for="advanced-methods" class="ml-3 text-sm text-butcher-700">Advanced methods (reductions, infusions, etc.)</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-sm font-medium text-butcher-700 mb-1">What specific cooking challenges would you like Chef Freddie to help with?</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-porkchop-500 focus:border-porkchop-500"></textarea>
+                </div>
+                <div class="flex items-start mb-6">
+                    <input id="privacy-policy" name="privacy-consent" type="checkbox" value="yes" class="h-4 w-4 text-porkchop-600 focus:ring-porkchop-500 border-gray-300 rounded" required>
+                    <label for="privacy-policy" class="ml-3 text-sm text-butcher-700">
+                        I agree to the <a href="#" class="text-porkchop-600 hover:underline">Privacy Policy</a> and consent to receive updates about Chef Freddie.
+                    </label>
+                </div>
+                <div>
+                    <button type="submit" class="w-full px-6 py-3 bg-porkchop-600 text-white font-medium rounded-md hover:bg-porkchop-700 transition-colors">
+                        Join Waitlist
+                    </button>
+                    <p class="text-xs text-center text-butcher-600 mt-2">You'll be sending your information to chef@porkchop.app</p>
+                </div>
+            </form>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="mb-16">
+            <h2 class="text-3xl font-bold text-butcher-800 mb-8 text-center">Frequently Asked Questions</h2>
+            <div class="space-y-6 max-w-3xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-lg font-semibold text-butcher-800 mb-2">Can Chef Freddie help me cook with whatever ingredients I already have?</h3>
+                    <p class="text-butcher-600">Absolutely! That's one of Chef Freddie's core strengths. Once our algorithm matches recipes to the ingredients you have on hand, Chef Freddie guides you through making delicious meals with whatever is in your fridge or pantry - no emergency grocery trips needed.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-lg font-semibold text-butcher-800 mb-2">Will Chef Freddie teach me professional cooking techniques?</h3>
+                    <p class="text-butcher-600">Yes! Chef Freddie provides detailed guidance on everything from basic knife skills to advanced techniques like creating perfect reductions, temperature control, proper stirring methods, and flavor infusions. You'll master new skills with each cooking session.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-lg font-semibold text-butcher-800 mb-2">Is Chef Freddie helpful for beginners?</h3>
+                    <p class="text-butcher-600">Chef Freddie is designed for cooks of all skill levels. For beginners, he provides fundamental guidance and builds your confidence with clear, step-by-step instructions. As your skills improve, Chef Freddie adapts to help you tackle more advanced techniques.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-lg font-semibold text-butcher-800 mb-2">Can Chef Freddie create custom recipes based on dietary restrictions?</h3>
+                    <p class="text-butcher-600">Yes! Chef Freddie can generate and adapt recipes to accommodate various dietary needs, including allergies, intolerances, and preference-based diets like vegan, keto, or paleo.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="bg-butcher-800 rounded-lg shadow-lg p-12 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Ready to Transform Your Cooking?</h2>
+            <p class="text-xl text-butcher-100 mb-8 max-w-3xl mx-auto">
+                Join the PorkChop family today and experience the tradition of authentic cooking with modern convenience.
+            </p>
+            <a href="mailto:chef@porkchop.app?subject=Chef%20Freddie%20Waitlist" class="px-8 py-4 bg-porkchop-500 text-white font-medium rounded-md hover:bg-porkchop-600 transition-colors inline-block">
+                Email Us Directly
+            </a>
+            <p class="text-butcher-300 mt-4">Limited spots available for beta testers!</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <div class="w-8 h-8 mr-2">
+                        <!-- Mini Chef Freddie Logo -->
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="14" fill="#fde8e4" />
+                            <circle cx="12" cy="14" r="2" fill="#1a4670" />
+                            <circle cx="20" cy="14" r="2" fill="#1a4670" />
+                            <path d="M12 20 Q16 22 20 20" stroke="#1a4670" stroke-width="1.5" fill="none" />
+                        </svg>
+                    </div>
+                    <span class="text-lg font-bold text-butcher-800">Chef Freddie</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="#" class="text-butcher-600 hover:text-butcher-800 transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-butcher-600 hover:text-butcher-800 transition-colors">Terms of Service</a>
+                    <a href="#" class="text-butcher-600 hover:text-butcher-800 transition-colors">Contact Us</a>
+                </div>
+            </div>
+            <div class="mt-6 text-center text-butcher-600">
+                <p><script>document.write(new Date().getFullYear());</script> PorkChop Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript to handle dynamic year in footer and smooth scrolling
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get current year for footer
+            const currentYear = new Date().getFullYear();
+            const yearElements = document.querySelectorAll('.current-year');
+            yearElements.forEach(el => {
+                el.textContent = currentYear;
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
