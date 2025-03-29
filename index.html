@@ -391,33 +391,32 @@
     </div>
 </footer>
 
-    <script>
-        // Simple JavaScript to handle dynamic year in footer and smooth scrolling
-        document.addEventListener('DOMContentLoaded', function() {
-            // Get current year for footer
-            const currentYear = new Date().getFullYear();
-            const yearElements = document.querySelectorAll('.current-year');
-            yearElements.forEach(el => {
-                el.textContent = currentYear;
-            });
+<script>
+    // Simple JavaScript to handle dynamic year in footer and smooth scrolling
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get current year for footer
+        const currentYear = new Date().getFullYear();
+        const yearElements = document.querySelectorAll('.current-year');
+        yearElements.forEach(el => {
+            el.textContent = currentYear;
+        });
 
-            // Smooth scrolling for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 100,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
 
-           // Add the new code here
+        // Add the email storage code
         const form = document.getElementById('waitlist-form');
         
         if (form) {
@@ -425,13 +424,13 @@
                 // Get the email for potential use later
                 const email = document.getElementById('email').value;
                 
-                // Store in local storage (optional)
+                // Store in local storage
                 localStorage.setItem('chefFreddieEmail', email);
                 
                 // The form will still continue to submit normally and redirect to thanks.html
             });
         }
     });
-    </script>
+</script>
 </body>
 </html>
